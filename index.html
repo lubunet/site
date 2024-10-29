@@ -23,13 +23,6 @@
             font-size: 2em;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-
         .logo {
             width: 150px;
             height: 150px;
@@ -45,11 +38,11 @@
         }
 
         .logo.secondary {
-            background-image: url('https://i.imgur.com/yrw5fqe.png');
+            background-image: url('https://i.imgur.com/yrw5fqe.png'); /* Substitua pela URL da nova logo */
         }
 
         .download-btn {
-            margin-top: 10px;
+            margin-top: 20px;
             padding: 15px 30px;
             background-color: green;
             color: white;
@@ -72,32 +65,21 @@
 
         footer {
             position: absolute;
-            bottom: 30px; /* Aumenta a distância do fundo */
+            bottom: 10px;
             color: black;
             font-size: 0.9em;
-        }
-
-        .download-name {
-            margin-top: 10px;
-            font-size: 1.2em;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <h1>Baixe nosso App</h1>
     
-    <div class="container">
-        <div class="logo primary"></div>
-        <div class="download-name">Versão DNS</div>
-        <a href="https://raw.githubusercontent.com/lubunet/site/main/LUBUNET-dns.apk" class="download-btn">DOWNLOAD</a>
-    </div>
+    <div class="logo primary"></div>
+    <a href="https://raw.githubusercontent.com/lubunet/site/main/LUBUNET-dns.apk" class="download-btn">DOWNLOAD</a>
 
-    <div class="container">
-        <div class="logo secondary"></div>
-        <div class="download-name">Versão V2</div>
-        <a href="http://189.127.165.149:25565/LUBUNET-V2.apk" class="download-btn">DOWNLOAD</a>
-    </div>
+    <!-- Duplicação da logo e botão -->
+    <div class="logo secondary"></div>
+    <a href="http://189.127.165.149:25565/LUBUNET-V2.apk" class="download-btn">DOWNLOAD</a>
 
     <footer>© @CARD_WOLF</footer>
 </body>
