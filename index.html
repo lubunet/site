@@ -28,10 +28,17 @@
             height: 150px;
             border-radius: 50%;
             border: 1px solid black;
-            background-image: url('https://i.imgur.com/ruzO21g.png');
             background-size: cover;
             background-position: center;
             margin-top: 20px;
+        }
+
+        .logo.primary {
+            background-image: url('https://i.imgur.com/ruzO21g.png');
+        }
+
+        .logo.secondary {
+            background-image: url('https://discord.com/channels/@me/965700376064049223/1290508591836565506'); /* Substitua pela URL da nova logo */
         }
 
         .download-btn {
@@ -67,11 +74,11 @@
 <body>
     <h1>Baixe nosso App</h1>
     
-    <div class="logo"></div>
+    <div class="logo primary"></div>
     <a href="https://raw.githubusercontent.com/lubunet/site/main/LUBUNET-dns.apk" class="download-btn">DOWNLOAD</a>
 
     <!-- Duplicação da logo e botão -->
-    <div class="logo"></div>
+    <div class="logo secondary"></div>
     <a href="http://189.127.165.149:25565/LUBUNET-V2.apk" class="download-btn">DOWNLOAD</a>
 
     <footer>© @CARD_WOLF</footer>
