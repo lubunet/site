@@ -23,6 +23,13 @@
             font-size: 2em;
         }
 
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
         .logo {
             width: 150px;
             height: 150px;
@@ -30,7 +37,7 @@
             border: 1px solid black;
             background-size: cover;
             background-position: center;
-            margin-top: 20px;
+            margin: 10px 0; /* Espaçamento vertical entre as logos */
         }
 
         .logo.primary {
@@ -80,13 +87,17 @@
 <body>
     <h1>Baixe nosso App</h1>
     
-    <div class="logo primary"></div>
-    <div class="download-name">LUBU NET V1</div>
-    <a href="https://raw.githubusercontent.com/lubunet/site/main/LUBUNET-dns.apk" class="download-btn">DOWNLOAD</a>
+    <div class="container">
+        <div class="logo primary"></div>
+        <div class="download-name">Versão DNS</div>
+        <a href="https://raw.githubusercontent.com/lubunet/site/main/LUBUNET-dns.apk" class="download-btn">DOWNLOAD</a>
+    </div>
 
-    <div class="logo secondary"></div>
-    <div class="download-name">LUBU NET V2</div>
-    <a href="http://189.127.165.149:25565/LUBUNET-V2.apk" class="download-btn">DOWNLOAD</a>
+    <div class="container">
+        <div class="logo secondary"></div>
+        <div class="download-name">Versão V2</div>
+        <a href="http://189.127.165.149:25565/LUBUNET-V2.apk" class="download-btn">DOWNLOAD</a>
+    </div>
 
     <footer>© @CARD_WOLF</footer>
 </body>
